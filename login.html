@@ -1,0 +1,67 @@
+<html lang="es">
+<head>
+    <title id="title">Iniciar Sesión | JavaScript</title>
+    <meta charset="UTF-8"/>
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="css/google.css"/>
+
+    <link rel="shortcut icon" href="favicon/Javascript.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon/Javascript.png" type="image/x-icon" />
+    
+    <script>var storage = window.localStorage;if(storage.getItem("Token") != undefined){window.location="index.html";}</script>
+</head>
+<body>
+    <div class="contenedor-form">
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form>
+                 <div class="Xb9hP">
+                    <input type="email" class="whsOnd" autocomplete="off" id="email-1"/>
+                    <div id="email-1L" class="AxOyFc">E-Mail</div>
+                </div>
+                <div class="Xb9hP">
+                    <input type="password" class="whsOnd" autocomplete="off" id="pass-1"/>
+                    <div id="pass-1L" class="AxOyFc">Contraseña</div>
+                </div>
+
+                <button type="button" id="btn-1">Iniciar Sesión</button>
+            </form>
+        </div>
+
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form>
+                <div class="Xb9hP">
+                    <input type="text" class="whsOnd" autocomplete="off" id="name-2"/>
+                    <div id="name-2L" class="AxOyFc">Nombre</div>
+                </div>
+                <div class="Xb9hP">
+                    <input type="email" class="whsOnd" autocomplete="off" id="email-2"/>
+                    <div id="email-2L" class="AxOyFc">E-Mail</div>
+                </div>
+                <div class="Xb9hP">
+                    <input type="password" class="whsOnd" autocomplete="off" id="pass-2A"/>
+                    <div id="pass-2AL" class="AxOyFc">Contraseña</div>
+                </div>
+                <div class="Xb9hP">
+                    <input type="password" class="whsOnd" autocomplete="off" id="pass-2B"/>
+                    <div id="pass-2BL" class="AxOyFc">Confirmar contraseña</div>
+                </div>
+
+                <button type="button" id="btn-2">Registrarse</button>
+            </form>
+        </div>
+
+        <div class="shange-form">
+            <span id="shange-form">Crear Cuenta</span>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/security-api.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/google.js"></script>
+</body>
+</html>

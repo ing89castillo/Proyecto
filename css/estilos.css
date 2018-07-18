@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: url(../img/wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Roboto;
+}
+.contenedor-form {
+    background: rgba(0,0,0,.7);
+    max-width: 500px;
+    width: 100%;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+}
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #1BFF91;
+    box-sizing: border-box;
+    font:400 14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus {
+    border-bottom: 4px solid #0075d9;
+}
+
+.contenedor-form button{
+    background: #1BFF91;
+    color: #000;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form button:hover {
+    color: #FFF;
+    background: rgba(0, 117, 217, 0.7);
+}
+.contenedor-form .shange-form {
+    background: rgba(0, 117, 217, .7);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+.contenedor-form .formulario {
+    display: none;
+    padding: 40px;
+}
+.contenedor-form .formulario:nth-child(1) {
+    display: block;
+}
+.error{
+    border-bottom: 4px solid #ff0000 !important;
+}
+.header{
+    border: 1px solid #000;
+    color: rgb(255, 255, 255);
+    background: #0075d9;
+    position: fixed;
+    cursor: default;
+    padding: 1px;
+    width: 100%;    
+}
+.header label{
+    float: left;
+    margin: 10px;
+    font-size: 28px;
+    font-weight: normal;
+    font-family: Roboto;
+    margin-left: 2.3%;
+}
+.header button{
+    color: aliceblue;
+    background: #ff851bf3;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.616);
+    font-family: sans-serif;
+    cursor: pointer;
+    padding: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header button:hover{
+    float: left;
+    color: #000;
+    border: 2px solid black;
+    background: #ff970ff3;
+}
+#btn-3{
+    float: right;
+    margin-right: 2.3%;
+}
+#btn-4{
+    float: left;
+    margin-left: 2.3%;
+}
+.star{
+    width: 25px;
+	height: 25px;
+    margin: 5px;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+.post{
+    padding-top: 80px;
+}
+.post table{
+    color: #000;
+    background: rgba(189, 189, 189, 0.87);
+    border: 1px solid #000;
+    margin-bottom: 2%;
+    width: 95%;
+}
+.post table tr td{
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.postTitle{
+    color: #002261;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+}
+.postBody{
+    font-size: 18px;
+    padding-top: 5px;
+    text-align: justify;
+    font-style: oblique;
+}
+.CommentBody{
+    font-size: 18px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    text-align: justify;
+    font-style: oblique;
+}
+.CommentUser{
+    font-size: 12px;
+    text-align: right;
+}
+.Commenting, .CommentingPost{
+    width: 95%;
+}
+.Commenting input{
+    color: #002261;
+    border: 1px solid black;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 5px;
+    height:auto;
+    float: left;
+    width: 84%;
+    padding: 7px;
+}
+.Commenting textarea{
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    text-align: justify;
+    padding: 7px;
+    height:150px;
+    width: 100%;
+}
+.Commenting Button{
+    color: #000;
+    background: #ff851bf3;
+    border: 1px solid black;
+    transition: all .5s ease;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    padding: 4.5px;
+    width: 15%;
+}
+.Commenting Button:hover {
+    color: #FFF;
+    background: rgba(0, 116, 217, 0.883);
+    border: 1px solid rgba(0, 51, 217, 0.883);
+}
+.CommentingPost textarea{
+    font-size: 18px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    text-align: justify;
+    padding: 7px;
+    height:150px;
+    width: 100%;
+    float: left;
+}
+.CommentingPost Button{
+    color: #000;
+    background: #ff851bf3;
+    border: 1px solid black;
+    transition: all .5s ease;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    padding: 4.5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.CommentingPost Button:hover {
+    color: #FFF;
+    background: rgba(0, 116, 217, 0.883);
+    border: 1px solid rgba(0, 51, 217, 0.883);
+}

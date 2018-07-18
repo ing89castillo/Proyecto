@@ -1,0 +1,40 @@
+<html lang="es">
+<head>
+    <title>POSTS | JavaScript</title>
+    <meta charset="UTF-8"/>
+
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
+
+    <link rel="shortcut icon" href="favicon/Javascript.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon/Javascript.png" type="image/x-icon" />
+    
+    <script>var storage = window.localStorage;if(storage.getItem("Token") == undefined){window.location="login.html";}else{if(storage.getItem("postId") == undefined){window.location="index.html";}}</script>
+</head>
+<body>
+    <div align="center">
+        <div class="header">
+            <button type="button" id="btn-4">Regresar</button>
+            <button type="button" id="btn-3">Cerrar Sesion</button>
+        </div>
+        <div class="post">
+            <table id="tabla_post">
+
+            </table>
+        </div>
+        <div class="CommentingPost">
+            <div>
+                <textarea id="CommentingPost" placeholder="Comentar aquí..."></textarea>
+            </div><div>
+                <button id="btn-5">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/security-api.js"></script>
+    <script src="js/user-api.js"></script>
+    <script src="js/post-api.js"></script>
+    <script src="js/comment-post.js"></script>
+</body>
+</html>
