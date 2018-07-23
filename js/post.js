@@ -52,10 +52,10 @@ function showPost(ArrayList){
                 divBody.textContent = post.body;
 
                 if(stars.indexOf(post.id - 1) != -1){
-                    imgStar.setAttribute("src","file:///C:/Users/ing89/Documents/ITLA/Proyecto/img/favorito_.png");
+                    imgStar.setAttribute("src","../Proyecto/img/favorito_.png");
                 }
                 else{
-                    imgStar.setAttribute("src","file:///C:/Users/ing89/Documents/ITLA/Proyecto/img/favorito.png");
+                    imgStar.setAttribute("src","../Proyecto/img/favorito.png");
                 }
                 
                 imgStar.setAttribute("id",post.id);
@@ -88,15 +88,15 @@ function btn_4(postId){
 }
 function star(post){
     postId = post.getAttribute("id")-1;
-    if(post.getAttribute("src") == "file:///C:/Users/ing89/Documents/ITLA/Proyecto/img/favorito.png"){
+    if(post.getAttribute("src") == "../Proyecto/img/favorito.png"){
         
-        post.setAttribute("src","file:///C:/Users/ing89/Documents/ITLA/Proyecto/img/favorito_.png");
+        post.setAttribute("src","../Proyecto/img/favorito_.png");
 
         stars.push(postId);
         window.localStorage.setItem("Stars", JSON.stringify(stars)); // Registrar el Star en local storage.
     }
     else{
-        post.setAttribute("src","file:///C:/Users/ing89/Documents/ITLA/Proyecto/img/favorito.png");
+        post.setAttribute("src","../Proyecto/img/favorito.png");
         var sTemp=[];
         for(var i=0 ; i<stars.length ; i++){
             if(stars[i]!=postId){
